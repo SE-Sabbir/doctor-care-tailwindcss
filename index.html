@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoctorCare | HTML & Tailwind Css</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- remix icon link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- link tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-primary: "DM Sans", sans-serif;
+
+        --color-brand-green: #00856f;
+        --color-brand-green-light: #dce9e2;
+        --color-brand-green-light-02: #f7f9f9;
+        --color-brand-beige: #fffaf1;
+        --color-brand-green-hover: #00453a;
+        --color-gray-headline: #061800;
+        --color-gray-paragraph: #384633;
+        --color-brand-white: #3e3e3e;
+      }
+    </style>
+  </head>
+  <body class="bg-brand-green-light-02 overflow-x-hidden">
+    <!-- header section -->
+    <header
+      id="header"
+      class="w-full fixed top-0 left-0 right-0 z-50 bg-brand-green-light"
+    >
+      <nav
+        class="container max-w-screen-xl mx-auto py-4 px-5 flex justify-between items-center"
+      >
+        <!-- logo -->
+        <div>
+          <a href="/" class="font-primary text-3xl font-extrabold text-gray-headline"
+            >Doctor<span class="text-brand-green">Care</span></a
+          >
+        </div>
+        <!-- menu item -->
+        <ul class="hidden md:flex space-x-8 font-primary font-medium text-brand-green">
+          <li>
+            <a href="#home" class="hover:text-brand-green-hover">Início</a>
+          </li>
+          <li>
+            <a href="#services" class="hover:text-brand-green-hover"
+              >Serviços</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="hover:text-brand-green-hover">Sobre</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-brand-green-hover"
+              >Depoimentos</a
+            >
+          </li>
+        </ul>
+        <!-- call to action btn -->
+        <div class="hidden md:block">
+          <a
+            id="contact-btn"
+            href="#contact"
+            class="md:w-56 md:flex justify-center items-center text-brand-green uppercase font-bold text-sm border border-brand-green px-6 py-2.5 rounded-full hover:text-white hover:bg-brand-green"
+            >Agendar consulta</a
+          >
+        </div>
+        <!-- mobile nav bar -->
+        <div class="lg:hidden md:hidden sm:block">
+          <button
+            id="mobile-menu-btn"
+            class="navbar-burger flex items-center p-3"
+          >
+            <img
+              src="./images/menu-icon.svg"
+              alt="nav icon"
+              class="block w-4 h-2 fill-current"
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- hero or banner section -->
+    <section class="py-28 bg-brand-green-light">
+      <div
+        class="container max-w-screen-xl mx-auto px-5 flex md:flex-row flex-col items-center justify-between"
+      >
+        <!-- text-contex -->
+        <div class="w-full md:w-2/3 text-center md:text-left">
+          <h2 class="text-sm font-primary font-bold text-brand-green mb-4">
+            BOAS-VINDAS A DOCTORCARE 👋
+          </h2>
+          <h1
+            class="text-4xl md:text-6xl font-primary font-bold text-gray-headline leading-18 mb-6"
+          >
+            Assistência médica simplificada para todos
+          </h1>
+          <p
+            class="md:w-4/5 text-lg md:text-xl font-primary font-normal text-gray-paragraph mb-8"
+          >
+            Os médicos da DoctorCare vão além dos sintomas para tratar a causa
+            raiz de sua doença e proporcionar uma cura a longo prazo.
+          </p>
+          <div class="w-full flex justify-center md:justify-start">
+              <button
+                class=" flex items-center justify-center px-6 py-3 gap-2 text-white uppercase text-lg bg-brand-green rounded-full hover:bg-brand-green-hover"
+              >
+                <i class="ri-whatsapp-line ri-lg "></i>
+                <a href="#contact">Agende sua consulta</a>
+              </button>
+          </div>
+        </div>
+        <!-- image contex -->
+        <div class="w-full md:w-1/3 flex justify-center md:justify-end mt-15 md:mt-0 ">
+            <img src="./images/hero-banner.png" alt="hero-banner-image" class="w-full object-cover">
+        </div>
+      </div>
+    </section>
+    <!-- stats section -->
+    <section class="container max-w-screen-xl mx-auto px-5 -mt-28">
+        <div class="w-full grid grid-cols-1 md:grid-cols-3 p-15 gap-15 bg-brand-beige rounded-lg shadow-lg font-primary ">
+            <div class="text-center">
+                <h4 class="text-5xl font-bold text-gray-headline pb-2">+3.500</h4>
+                <p class="text-lg text-gray-paragraph ">Pacientes atendidos</p>
+            </div>
+            <div class="text-center border-opacity-0 md:border-l md:border-r border-brand-green/40 ">
+                <h4 class="text-5xl font-bold text-gray-headline pb-2">+15</h4>
+                <p class="text-lg text-gray-paragraph ">Especialistas disponíveis</p>
+            </div>
+            <div class="text-center">
+                <h4 class="text-5xl font-bold text-gray-headline pb-2">+10</h4>
+                <p class="text-lg text-gray-paragraph ">Anos no mercado</p>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
