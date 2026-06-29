@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/Aarogya-favicon.png">
     <title>DoctorCare | HTML & Tailwind Css</title>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,6 +31,11 @@
         --color-gray-headline: #061800;
         --color-gray-paragraph: #384633;
         --color-brand-white: #3e3e3e;
+      }
+    </style>
+    <style>
+      html{
+        scroll-behavior: smooth;
       }
     </style>
   </head>
@@ -85,7 +91,7 @@
       </nav>
     </header>
     <!-- hero or banner section -->
-    <section class="py-28 bg-brand-green-light">
+    <section id="home" class="py-28 bg-brand-green-light">
       <div
         class="container max-w-screen-xl mx-auto px-5 flex md:flex-row flex-col items-center justify-between"
       >
@@ -138,7 +144,7 @@
         </div>
     </section>
     <!-- services section -->
-    <section>
+    <section id="services">
       <div class="container max-w-screen-xl mx-auto px-5 py-40 ">
         <div class="flex flex-col items-center text-center font-primary ">
           <p class="text-lg font-bold text-brand-green pb-4">SERVIÇOS</p>
@@ -151,7 +157,7 @@
       </div>
     </section>
     <!-- about section -->
-    <section class="bg-brand-beige">
+    <section id="about" class="bg-brand-beige">
       <div class="container max-w-screen-xl mx-auto px-5 flex md:flex-row flex-col-reverse items-center justify-between py-40">
         <div class="w-full rounded-xl overflow-hidden">
           <img src="./images/about.png" alt="doctor-image">
@@ -164,7 +170,7 @@
       </div>
     </section>
     <!-- contact section -->
-    <section>
+    <section id="contact">
       <div class="container max-w-screen-xl mx-auto px-5 flex md:flex-row flex-col items-center justify-between py-40">
         <div class="w-full ">
           <h2 class="text-3xl md:text-[40px] leading-snug font-bold w-5/6 md:w-5/7 pb-10">Entre em contato com a gente!</h2>
