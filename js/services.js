@@ -46,4 +46,3 @@ function serviceCard (item) {
 
 const serviceContainer = document.getElementById("service-container")
 serviceContainer.innerHTML = serviceItem.map((item) => serviceCard(item)).join('')
-console.log(serviceContainer.innerHTML)
