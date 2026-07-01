@@ -6,19 +6,15 @@ const animation = ScrollReveal({
     reset: true
 })
 
-animation.reveal( '.services-content',{
+animation.reveal( '.services-content , .footer-content',{
     delay: 200,
     origin: 'top'
 })
-animation.reveal( '.hero-content, .footer-content , .services-card',{
+animation.reveal( '.hero-content, .services-card',{
     delay: 200,
     origin: 'bottom'
 })
-animation.reveal( '.stats-content, .about-content',{
-    delay: 200,
-    origin: 'right'
-})
-animation.reveal( '.contact-content',{
+animation.reveal( ' .stats-content, .about-content , .contact-content',{
     delay: 200,
     origin: 'left'
 })
