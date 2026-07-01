@@ -98,7 +98,7 @@
       </nav>
       <!-- Todo mobile menu -->
       <div id="mobile-menu" class="navbar-menu relative z-50 hidden"> 
-        <div class="navbar-backdrop fixed inset-0 bg-brand-green">
+        <div class="navbar-backdrop fixed inset-0 bg-brand-green ">
           <nav
             class="w-full fixed top-0 left-0 bottom-0 py-4 px-5 overflow-y-hidden font-primary"
           >
@@ -153,7 +153,7 @@
       </div>
     </header>
     <!-- hero or banner section -->
-    <section id="home" class="py-28 bg-brand-green-light">
+    <section id="home" class="py-28 bg-brand-green-light hero-content">
       <div
         class="container max-w-screen-xl mx-auto px-5 flex md:flex-row flex-col items-center justify-between"
       >
@@ -195,7 +195,7 @@
       </div>
     </section>
     <!-- stats section -->
-    <section class="container max-w-screen-xl mx-auto px-5 -mt-28">
+    <section class="container max-w-screen-xl mx-auto px-5 -mt-28 stats-content">
       <div
         class="w-full grid grid-cols-1 md:grid-cols-3 p-15 gap-15 bg-brand-beige rounded-lg shadow-lg font-primary"
       >
@@ -217,8 +217,8 @@
     </section>
     <!-- services section -->
     <section id="services">
-      <div class="container max-w-screen-xl mx-auto px-5 py-40">
-        <div class="flex flex-col items-center text-center font-primary">
+      <div class="container max-w-screen-xl mx-auto px-5 py-20 md:py-40 ">
+        <div class="flex flex-col items-center text-center font-primary services-content">
           <p class="text-lg font-bold text-brand-green pb-4">SERVIÇOS</p>
           <h2
             class="text-3xl md:text-[40px] leading-snug font-bold w-3/4 md:w-1/2"
@@ -229,14 +229,14 @@
         <!-- services card -->
         <div
           id="service-container"
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pt-16"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pt-16 services-card"
         ></div>
       </div>
     </section>
     <!-- about section -->
-    <section id="about" class="bg-brand-beige">
+    <section id="about" class="bg-brand-beige about-content">
       <div
-        class="container max-w-screen-xl mx-auto px-5 flex md:flex-row flex-col-reverse items-center justify-between py-40"
+        class="container max-w-screen-xl mx-auto px-5 flex md:flex-row flex-col-reverse items-center justify-between py-20 md:py-40"
       >
         <div class="w-full rounded-xl overflow-hidden">
           <img src="./images/about.png" alt="doctor-image" />
@@ -266,7 +266,7 @@
     <!-- contact section -->
     <section id="contact">
       <div
-        class="container max-w-screen-xl mx-auto px-5 flex md:flex-row flex-col items-center justify-between py-40"
+        class="container max-w-screen-xl mx-auto px-5 flex md:flex-row flex-col items-center justify-between py-20 md:py-40 contact-content"
       >
         <div class="w-full">
           <h2
@@ -299,7 +299,7 @@
       </div>
     </section>
     <!-- footer section -->
-    <footer class="bg-brand-green text-white py-6">
+    <footer class="bg-brand-green text-white py-6 footer-content">
       <div
         class="container max-w-screen-xl mx-auto px-5 flex flex-col-reverse md:flex-row items-center justify-between"
       >
@@ -327,5 +327,8 @@
     <!-- js script link -->
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/scrollreveal"></script> 
+    <script src="js/animation.js"></script>
   </body>
 </html>
